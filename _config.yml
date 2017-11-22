@@ -1,0 +1,37 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               Script Kiddie`s notes
+tagline:             '"Breadcrumbs from my brain"'
+url:                 https://Mike-n1.github.io
+paginate:            5
+baseurl:             ""
+highlighter:      rouge
+future:           false
+show_drafts:      false
+excerpt_separator: <!--more-->
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Mike Klyuchnikov
+  url:               https://twitter.com/__Mn1__
+  email:             unknow
+
+# Custom vars
+version:             1.0.0
+github:
+  repo:              https://github.com/poole/poole
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
