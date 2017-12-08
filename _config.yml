@@ -6,7 +6,7 @@ title:               Script Kiddie`s notes
 tagline:             '"Breadcrumbs from my brain"'
 url:                 https://Mike-n1.github.io
 paginate:            5
-baseurl:             ""
+baseurl:             "https://mike-n1.github.io"
 highlighter:      rouge
 future:           false
 show_drafts:      false
