@@ -32,7 +32,9 @@ Extensions with basic vector:
 * .hxt
 * .htm
 
+<a href="/public/cer_xss.jpg" data-fancybox data-toolbar="false" data-small-btn="true">
 ![alt text](/public/cer_xss.jpg "cer xss")
+</a>
 
 Therefore, it is possible to paste the basic XSS vector in the uploaded file, and we will get an alert box in browser after opening the document.
 The list below includes extensions on which IIS responds with the content-type which allow to execute XSS via XML-based vector.
@@ -52,7 +54,9 @@ Extensions with XML-based vector:
 * .wsdl
 * .xhtml
 
+<a href="/public/mno_xss.png" data-fancybox data-toolbar="false" data-small-btn="true">
 ![alt text](/public/mno_xss.png "mno xss")
+</a>
 
 By default, IIS also supports SSI, however exec section is prohibited for the security reasons
 
@@ -61,7 +65,9 @@ Extensions for SSI:
 * .shtm
 * .shtml
 
+<a href="/public/SSI_example.png" data-fancybox data-toolbar="false" data-small-btn="true">
 ![alt text](/public/SSI_example.png "SSI sorce code")
+</a>
 
 More detailed information about SSI is written in the [post](https://twitter.com/ldionmarcil/status/922561177636311041) by [@ldionmarcil](https://twitter.com/ldionmarcil)
 
@@ -92,7 +98,9 @@ using System.Diagnostics;
 	}
 
    ```
+   <a href="/public/asmx_source_example.png" data-fancybox data-toolbar="false" data-small-btn="true">
    ![alt text](/public/asmx_source_example.png "Asmx sorce code")
+   </a>
   
 2. Then we sent POST request to the uploaded document:
 
@@ -109,7 +117,9 @@ using System.Diagnostics;
      </soap12:Body>
    </soap12:Envelope>
    ```
+   <a href="/public/asmx_calc_example.png" data-fancybox data-toolbar="false" data-small-btn="true">
    ![alt text](/public/asmx_calc_example.png "Run calc")
+   </a>
    
    
 3. As the result, IIS executed "calc.exe"
@@ -146,7 +156,9 @@ SOAPAction: "/"
 </soap:Envelope>
 
    ```
+   <a href="/public/soap_rce.png" data-fancybox data-toolbar="false" data-small-btn="true">
    ![alt text](/public/soap_rce.png "Run calc")
+   </a>
    
 ***
 
@@ -167,7 +179,9 @@ Extensions with XML-based vector:
 
 \* if there are any characters after “.html.” in the extension, Apache will respond with text/html content-type.
 
+<a href="/public/html_random.png" data-fancybox data-toolbar="false" data-small-btn="true">
 ![alt text](/public/html_random.png "xss")
+</a>
 
 In addition:
 
