@@ -46,8 +46,8 @@ None of the methods I tried didn't worked, but it seemed to me that I could achi
 
 Finally, I've got a payload: ```<img src="file	:///C:\Program Files\Internet Explorer\images\bing.ico">```
 
-<a href="/public/BingIMage.png" data-fancybox data-toolbar="false" data-small-btn="true">
-![alt text](/public/BingIMage_s.png "Bing Image")
+<a href="/public/BingImage.png" data-fancybox data-toolbar="false" data-small-btn="true">
+![alt text](/public/BingImage_s.png "Bing Image")
 </a>
 
 In the result, we successfully bypassed the filter and changed the priority from P4 to P2.
